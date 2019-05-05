@@ -3,8 +3,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
  
 CREATE TABLE buildings(
-    id SERIAL PRIMARY KEY NOT NULL,
+    buildingID SERIAL PRIMARY KEY NOT NULL,
 	name VARCHAR(50) UNIQUE NOT NULL CHECK (char_length(name) >= 1),
-    group_id int,
+    notes VARCHAR(500),
     page VARCHAR(100)
 )
